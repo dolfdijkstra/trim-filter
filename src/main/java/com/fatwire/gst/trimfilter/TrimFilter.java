@@ -1,4 +1,4 @@
-package com.fatwire.cs.filter.trimfilter;
+package com.fatwire.gst.trimfilter;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *  <pre>
  *  &lt;filter&gt;
         &lt;filter-name&gt;TrimFilter&lt;/filter-name&gt;
-        &lt;filter-class&gt;com.fatwire.cs.filter.trimfilter.TrimFilter&lt;/filter-class&gt;
+        &lt;filter-class&gt;com.fatwire.gst.trimfilter.TrimFilter&lt;/filter-class&gt;
     &lt;/filter&gt;
 [...]
     &lt;filter-mapping&gt;

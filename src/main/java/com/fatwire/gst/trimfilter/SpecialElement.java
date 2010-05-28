@@ -1,4 +1,4 @@
-package com.fatwire.cs.filter.trimfilter;
+package com.fatwire.gst.trimfilter;
 
 public enum SpecialElement {
 

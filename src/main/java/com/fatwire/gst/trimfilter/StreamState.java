@@ -1,9 +1,9 @@
 /**
  * 
  */
-package com.fatwire.cs.filter.trimfilter;
+package com.fatwire.gst.trimfilter;
 
-import com.fatwire.cs.filter.trimfilter.Trimmer2.DocumentState;
+import com.fatwire.gst.trimfilter.Trimmer2.DocumentState;
 
 class StreamState {
 

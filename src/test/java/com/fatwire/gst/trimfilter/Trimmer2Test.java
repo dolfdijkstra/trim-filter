@@ -1,6 +1,9 @@
-package com.fatwire.cs.filter.trimfilter;
+package com.fatwire.gst.trimfilter;
 
 import java.util.Arrays;
+
+import com.fatwire.gst.trimfilter.StreamState;
+import com.fatwire.gst.trimfilter.Trimmer2;
 
 import junit.framework.TestCase;
 

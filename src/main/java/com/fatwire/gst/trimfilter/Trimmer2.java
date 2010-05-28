@@ -1,4 +1,4 @@
-package com.fatwire.cs.filter.trimfilter;
+package com.fatwire.gst.trimfilter;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
