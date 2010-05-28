@@ -1,0 +1,53 @@
+Introduction
+
+  The trim-filter is a servlet filter to remove whitespace from html pages. 
+
+  Many JSP pages produce a lot of whitespace on places where this is not needed for correct rendering of the page. This whitespace consumes a lot of bandwith and reduces the web experience.
+
+  The advantage of this trim filter over others is that this trim filter is Satellite Server aware and that source code is available.
+  
+  The filter is deployed at several of our customers and is used for high load websites.
+  
+  The filter is developed by the FatWire Global Solutions Team.
+
+Deployment
+
+  To deploy the trim-filter on your website you need to add the jar file to the modify the web.xml file and add the filter configuration to it.
+
+  If you are using Remote Satellite Server the trim-filter only needs to be deployed to the ContentServer machine.The filter is aware that the request is coming from Satellite Server and is only invoked for those requests. There is no need to deploy this filter on Remote Satellite Server for pages rendered through ContentServer.
+
+---
+    <filter>
+        <filter-name>TrimFilter</filter-name>
+        <filter-class>com.fatwire.gst.trimfilter.TrimFilter</filter-class>
+    </filter>
+    [...]
+    <filter-mapping>
+        <filter-name>TrimFilter</filter-name>
+        <url-pattern>/ContentServer/*</url-pattern>
+    </filter-mapping>
+---
+
+  If you are using Co-Resident Satellite Server the trim filter needs to be configured for Satellite Server servlet.
+
+---
+     <filter>
+        <filter-name>TrimFilter</filter-name>
+        <filter-class>com.fatwire.gst.trimfilter.TrimFilter</filter-class>
+        <init-param>
+           <param-name>ss-aware</param-name>
+          <param-value>false</param-value>
+        </init-param>
+    </filter>
+    [...]
+    <filter-mapping>
+        <filter-name>TrimFilter</filter-name>
+        <url-pattern>/Satellite/*</url-pattern>
+    </filter-mapping>
+---
+
+  To request a document untrimmed, you can add <<<notrim=true>>> to the request query string. If that name/value pair is present the trimming will not be done.
+
+Download
+
+  The jar files can be downloaded at {{http://www.nl.fatwire.com/maven2/com/fatwire/gst/trim-filter}}
