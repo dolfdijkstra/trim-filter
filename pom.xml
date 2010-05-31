@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.fatwire.gst</groupId>
     <artifactId>trim-filter</artifactId>
     <packaging>jar</packaging>
-    <version>1.1</version>
+    <version>1.1-SNAPSHOT</version>
     <name>FatWire GST: whitespace trim filter</name>
     <description>A servlet filter for removing  whitespace from html pages.</description>
     <url>http://www.nl.fatwire.com/dta/contrib/trim-filter/</url>
@@ -17,9 +18,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:svn:http://www.nl.fatwire.com/svn/dta/contrib/trim-filter/tags/trim-filter-1.1</connection>
-        <developerConnection>scm:svn:http://d670-1.nl.fatwire.com/svn/dta/contrib/trim-filter/tags/trim-filter-1.1</developerConnection>
-        <url>http://www.nl.fatwire.com/viewvc/dta/contrib/trim-filter/tags/trim-filter-1.1</url>
+        <connection>scm:svn:http://www.nl.fatwire.com/svn/dta/contrib/trim-filter/trunk</connection>
+        <developerConnection>scm:svn:http://d670-1.nl.fatwire.com/svn/dta/contrib/trim-filter/trunk</developerConnection>
+        <url>http://www.nl.fatwire.com/viewvc/dta/contrib/trim-filter/trunk</url>
     </scm>
     <dependencies>
         <dependency>
