@@ -167,6 +167,8 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+            <releases>
+                <enabled>true</enabled></releases>
         </repository>
         <repository>
             <id>snapshot.nl.fatwire.com</id>
@@ -174,6 +176,8 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+            <releases>
+                <enabled>false</enabled></releases>
         </repository>
     </repositories>
 </project>
