@@ -13,7 +13,7 @@ public class Trimmer2 {
     private static final Log log = LogFactory.getLog(Trimmer2.class);
 
     interface DocumentState {
-        static boolean unforgiven = true;
+        static boolean unforgiven = false;
 
         void nextChar(StreamState ss);
 
